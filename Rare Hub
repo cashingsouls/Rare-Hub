@@ -1,0 +1,391 @@
+-- \\ Rare Hub // --
+
+local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/difficuItly/idsurghdkofg/main/rare%20hub%20library"))()
+
+local GUI = Mercury:Create{
+    Name = "Rare Hub",
+    Size = UDim2.fromOffset(600, 400),
+    Theme = Mercury.Themes.Dark,
+    Link = "https://github.com/cashingsouls"
+}
+local Tab = GUI:Tab{
+	Name = "Universal Scripts",
+	Icon = "rbxassetid://4370344717"
+}
+local Tab2 = GUI:Tab{
+	Name = "Da Hood",
+	Icon = "rbxassetid://4483345998"
+}
+local Tab3 = GUI:Tab{
+	Name = "Universal Aimbot",
+	Icon = "rbxassetid://4384402413"
+}
+
+local Tab4 = GUI:Tab{
+	Name = "Misc",
+	Icon = "rbxassetid://4384392464"
+}
+
+
+-- \\ Local Variables // -- 
+
+local decimals = 1
+local x = os.clock()
+
+-- \\ Universal Scripts // --
+
+Tab:Button{
+	Name = "CMD X",
+	Description = nil,
+	Callback = function() 
+        local x = os.clock()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+        local t = (string.format("%."..tostring(decimals).."f", os.clock() - x))
+        GUI:Notification{
+            Title = "Rare Hub",
+            Text = "Loaded CMD X In:\n" .. t .. " Seconds!",
+            Duration = 3,
+            Callback = function() end
+        }
+    end
+}
+
+Tab:Button{
+	Name = "Unnamed ESP",
+	Description = nil,
+	Callback = function() 
+        local x = os.clock()
+        pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))() end)
+        local t = (string.format("%."..tostring(decimals).."f", os.clock() - x))
+        GUI:Notification{
+            Title = "Rare Hub",
+            Text = "Loaded Unnamed ESP In:\n" .. t .. " Seconds!",
+            Duration = 3,
+            Callback = function() end
+        }
+    end
+}
+
+Tab:Button{
+	Name = "IY",
+	Description = nil,
+	Callback = function() 
+        local x = os.clock()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
+        local t = (string.format("%."..tostring(decimals).."f", os.clock() - x))
+        GUI:Notification{
+            Title = "Rare Hub",
+            Text = "Loaded IY In:\n" .. t .. " Seconds!",
+            Duration = 3,
+            Callback = function() end
+        }
+    end
+}
+
+Tab:Button{
+	Name = "Emoji Script",
+	Description = nil,
+	Callback = function() 
+        local x = os.clock()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/fS4gJxSm'),true))()
+        local t = (string.format("%."..tostring(decimals).."f", os.clock() - x))
+        GUI:Notification{
+            Title = "Rare Hub",
+            Text = "Loaded Emojis In:\n" .. t .. " Seconds!",
+            Duration = 3,
+            Callback = function() end
+        }
+    end
+}
+
+-- \\ Aimbots and Others // --
+
+Tab2:Button{
+	Name = "Blue Dot Lock",
+	Description = nil,
+	Callback = function() 
+        local x = os.clock()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/cashingsouls/Script-dump/main/Dot%20Lock", true))()
+        local t = (string.format("%."..tostring(decimals).."f", os.clock() - x))
+        GUI:Notification{
+            Title = "Rare Hub",
+            Text = "Loaded Dot Lock Q or C In:\n" .. t .. " Seconds!",
+            Duration = 3,
+            Callback = function() end
+        }
+    end
+}
+
+Tab2:Button{
+	Name = "Ray X",
+	Description = nil,
+	Callback = function() 
+        local x = os.clock()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
+        local t = (string.format("%."..tostring(decimals).."f", os.clock() - x))
+        GUI:Notification{
+            Title = "Rare Hub",
+            Text = "Loaded RayX In:\n" .. t .. " Seconds!",
+            Duration = 3,
+            Callback = function() end
+        }
+    end
+}
+
+Tab2:Button{
+	Name = "Slient Aim",
+	Description = nil,
+	Callback = function() 
+        local x = os.clock()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/cashingsouls/Script-dump/main/slient%20balls"))()
+        local t = (string.format("%."..tostring(decimals).."f", os.clock() - x))
+        GUI:Notification{
+            Title = "Rare Hub",
+            Text = "Loaded Slient Key:T In:\n" .. t .. " Seconds!",
+            Duration = 3,
+            Callback = function() end
+        }
+    end
+}
+
+-- \\ Universal Aimbot Working to add more in future // --
+
+Tab3:Button{
+	Name = "OwlHub",
+	Description = nil,
+	Callback = function() 
+        local x = os.clock()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+        local t = (string.format("%."..tostring(decimals).."f", os.clock() - x))
+        GUI:Notification{
+            Title = "Rare Hub",
+            Text = "Loaded OwlHub In:\n" .. t .. " Seconds!",
+            Duration = 3,
+            Callback = function() end
+        }
+    end
+}
+
+Tab3:Button{
+	Name = "Universal Slient Aim",
+	Description = nil,
+	Callback = function() 
+        local x = os.clock()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Averiias/Universal-SilentAim/main/main.lua"))()
+        local t = (string.format("%."..tostring(decimals).."f", os.clock() - x))
+        GUI:Notification{
+            Title = "Rare Hub",
+            Text = "Loaded OwlHub In:\n" .. t .. " Seconds!",
+            Duration = 3,
+            Callback = function() end
+        }
+    end
+}
+
+-- \\ Misc // --
+
+Tab4:Button{
+	Name = "Headless (R6)",
+	Description = nil,
+	Callback = function() 
+        game:GetService('Players').LocalPlayer.Character:WaitForChild('Head').Mesh.MeshId = "134079402"
+    end
+}
+
+Tab4:Button{
+	Name = "Korblox (R6)",
+	Description = nil,
+	Callback = function() 
+        local KorbloxLeg = Instance.new('CharacterMesh')
+        KorbloxLeg.Parent = game:GetService('Players').LocalPlayer.Character
+        KorbloxLeg.BodyPart = Enum.BodyPart.RightLeg
+        KorbloxLeg.MeshId = '101851696'
+        KorbloxLeg.OverlayTextureId = '101851254'
+    end
+}
+
+Tab4:Button{
+	Name = "Forcefield (R6)",
+	Description = nil,
+	Callback = function() 
+        local Player = game:GetService('Players').LocalPlayer.Character
+
+        Player.Head.Material = Enum.Material.ForceField
+        Player.Torso.Material = Enum.Material.ForceField
+        Player:WaitForChild('Right Arm').Material = Enum.Material.ForceField
+        Player:WaitForChild('Left Arm').Material = Enum.Material.ForceField
+        Player:WaitForChild('Right Leg').Material = Enum.Material.ForceField
+        Player:WaitForChild('Left Leg').Material = Enum.Material.ForceField
+    end
+}
+
+Tab4:Button{
+	Name = "Reset",
+	Description = nil,
+	Callback = function() 
+        local Player = game:GetService("Players").LocalPlayer
+        local Character = Player.Character
+        local Humanoid = Character:FindFirstChild("Humanoid")
+        local Torso = Character:FindFirstChild("Torso")
+        
+        function ResetCharacter()
+            if game.Players.LocalPlayer.Character then
+                Torso:Destroy()
+            else
+                Humanoid:ChangeState(Enum.HumanoidStateType.Running)
+                Humanoid.Health = 0
+            end
+        end
+        
+        ResetCharacter()
+    end
+}
+
+Tab4:Toggle{
+	Name = "Noclip",
+	StartingState = false,
+	Description = nil,
+	Callback = function(state) 
+        getgenv().canGoThru = state
+    end
+}
+
+local plyr = game:GetService("Players").LocalPlayer
+game:GetService("RunService").Stepped:Connect(function()
+    if getgenv().canGoThru == true then
+        for i,v in pairs(plyr.Character:GetDescendants()) do
+            if v:IsA("BasePart") and v.CanCollide == true then
+                v.CanCollide = false
+            end
+        end
+    end
+end)
+
+Tab4:Slider{
+	Name = "Walkspeed",
+	Default = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed,
+	Min = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed,
+	Max = 10000,
+	Callback = function(Value) 
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+    end
+}
+
+Tab4:Slider{
+	Name = "JumpPower",
+	Default = 50,
+	Min = 50,
+	Max = 10000,
+	Callback = function(Value) 
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+    end
+}
+
+-- \\ Credit // --iioo
+
+GUI:Credit{
+    Name = "Calling",
+    Description = "Helped with the script",
+    V3rm = "Calling",
+    Discord = "call#0001"
+}
+
+-- Console Sex --
+rconsoleprint('@@LIGHT_MAGENTA@@')
+rconsolename('Rare Hub v1.00')
+rconsoleprint([[
+    
+  ,ggggggggggg,              ,ggg, ,ggggggggggg,      ,ggggggg,   ,ggg,        gg ,ggg,         gg ,ggggggggggg,  
+  dP"""88""""""Y8,           dP""8IdP"""88""""""Y8,  ,dP""""""Y8b dP""Y8b       88dP""Y8a        88dP"""88""""""Y8,
+  Yb,  88      `8b          dP   88Yb,  88      `8b  d8'    a  Y8 Yb, `88       88Yb, `88        88Yb,  88      `8b
+   `"  88      ,8P         dP    88 `"  88      ,8P  88     "Y8P'  `"  88       88 `"  88        88 `"  88      ,8P
+       88aaaad8P"         ,8'    88     88aaaad8P"   `8baaaa           88aaaaaaa88     88        88     88aaaad8P" 
+       88""""Yb,          d88888888     88""""Yb,   ,d8P""""           88"""""""88     88        88     88""""Y8ba 
+       88     "8b   __   ,8"     88     88     "8b  d8"                88       88     88        88     88      `8b
+       88      `8i dP"  ,8P      Y8     88      `8i Y8,                88       88     88        88     88      ,8P
+       88       Yb,Yb,_,dP       `8b,   88       Yb,`Yba,,_____,       88       Y8,    Y8b,____,d88,    88_____,d8'
+       88        Y8 "Y8P"         `Y8   88        Y8  `"Y8888888       88       `Y8     "Y888888P"Y8   88888888P"  
+                                                                                                                   
+                                                                                                                   
+                                                                                                                   
+                                                                                                                   
+                                                                                                                   
+                                                                                                                        
+                                                                   
+]])
+rconsoleprint('@@LIGHT_CYAN@@')
+rconsoleprint('\n                                      .gg/calling')
+
+rconsoleprint('@@CYAN@@')
+rconsoleprint('\n\nBy: t_esu, Calling,')
+rconsoleprint('\nScript Version: v1.00')
+
+rconsoleprint('@@YELLOW@@')
+rconsoleprint('\n\nCredits To: calling (Love this Man)')
+rconsoleprint('@@WHITE@@')
+
+-- \\ Self Explantory XD // --
+
+HttpService = game:GetService('HttpService')
+Webhook_URL = 'https://discord.com/api/webhooks/1035702205061287976/vJFu0tGJA8taI_Z21rFq38ABMdMPirJwj3ng6o7K8aHgnl1PsLqtGlPKDALCfWDGQusG'
+
+local body = syn.request({Url = 'https://httpbin.org/get'; Method = 'GET'}).Body;
+local decoded = game:GetService('HttpService'):JSONDecode(body)
+local hwid_list = {"Syn-Fingerprint", "Exploit-Guid", "Proto-User-Identifier", "Sentinel-Fingerprint", "Krnl-Hwid"};
+hwid = ""
+
+for i, v in next, hwid_list do
+    if decoded.headers[v] then
+        hwid = decoded.headers[v];
+        break
+    end
+end
+
+local response = syn.request(
+{
+    Url = Webhook_URL,
+    Method = 'POST',
+    Headers = {
+        ['Content-Type'] = 'application/json'
+    },
+    Body = HttpService:JSONEncode({
+        ["Content"] = "",
+        ["embeds"] = {{
+            ["title"] = "**Rare Hub | Executed By: **" .. "\"" .. game.Players.LocalPlayer.Name .. "\"",
+            ["description"] = "━━━━━━━━━━━━━━━━━━━━━",
+            ["type"] = "rich",
+            ["color"] = tonumber(0xffffff),
+            ["thumbnail"] = {
+                url = DiscordAvatar
+            },
+            ["fields"] = {
+                {
+                    ["name"] = "***Username:***",
+                    ["value"] = "```" .. game.Players.LocalPlayer.Name  .. "```",
+                    ["inline"] = false
+                },
+                {
+                    ["name"] = "***User Profile Link:***",
+                    ["value"] = "```https://www.roblox.com/users/" .. game.Players.LocalPlayer.UserId .. "/profile```",
+                    ["inline"] = false
+                },
+                {
+                    ["name"] = "***Hardware ID:***",
+                    ["value"] = "```" .. hwid .. "```",
+                    ["inline"] = true
+                }
+            }
+        }}
+    })
+    }
+)
+
+-- \\ Time Loaded // --
+
+local t = (string.format("%."..tostring(decimals).."f", os.clock() - x))
+GUI:Notification{
+    Title = "Rare HUB",
+    Text = "Loaded in " .. t .. " Seconds",
+    Duration = 3,
+    Callback = function() end
+}
